@@ -14,14 +14,17 @@
                 <p>{{FirstName}} {{LastName}}</p>
             </div>
             <div class="col-md-8">
-                <p>{{myJson.firstName}} {{myJson.lastName}}</p>
+                <p>{{myJson.FirstName}} {{myJson.LastName}}</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <ul>
                     <li ng-repeat="person in myJsonList">
-                        <p>{{person.firstName}} {{person.lastName}}</p>
+                        <p>{{person.FirstName}} {{person.LastName}}</p>
+                        <button type="button" ng-click="edit(person.Id)">Edit</button>
+                        <button type="button" ng-click="details(person.Id)">Details</button>
+                        <hr />
                     </li>
                 </ul>
 

@@ -11,6 +11,7 @@ namespace Contacts.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(Contacts.Models.PeopleDB context)
