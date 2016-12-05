@@ -28,11 +28,7 @@ namespace Contacts.Controllers
             return Json(friends, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult AngularSPA()
-        {
-            return View();
-        }
-
+        
         public JsonResult AjaxThatReturnsJsonPerson(int? Id)
         {
             object myInfo = null;
@@ -47,6 +43,10 @@ namespace Contacts.Controllers
             return Json(myInfo, JsonRequestBehavior.AllowGet);
         }
 
+        public ActionResult AngularJS()
+        {
+            return View();
+        }
 
         public ActionResult About()
         {

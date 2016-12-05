@@ -12,4 +12,10 @@ app.controller('myCtrl', function ($scope, $http) {
         .then(function (response) {
             $scope.myJsonList = response.data;
         });
+
+    $scope.editUser = function (UserId) {
+
+    };
+
+
 });

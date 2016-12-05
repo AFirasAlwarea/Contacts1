@@ -22,7 +22,7 @@
                 <ul>
                     <li ng-repeat="person in myJsonList">
                         <p>{{person.FirstName}} {{person.LastName}}</p>
-                        <button type="button" ng-click="edit(person.Id)">Edit</button>
+                        <button type="button" ng-click="editUser(person.Id)">Edit</button>
                         <button type="button" ng-click="details(person.Id)">Details</button>
                         <hr />
                     </li>
@@ -33,3 +33,4 @@
 
     </div>
 </div>
+

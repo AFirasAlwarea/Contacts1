@@ -40,6 +40,6 @@
 
 })();
 
-// Files that are modefied in this prodject to make this work:
+// Files that are modefied in this project to make this work:
 // App_Start/BundleConfig.cs
 // Views/Shared/_Layout.cshtml
