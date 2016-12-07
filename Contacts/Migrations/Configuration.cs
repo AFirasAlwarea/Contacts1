@@ -1,5 +1,6 @@
 namespace Contacts.Migrations
 {
+    using Lexicon.CSharp.InfoGenerator;
     using Models;
     using System;
     using System.Data.Entity;
@@ -51,19 +52,21 @@ namespace Contacts.Migrations
                     Email = "shadi.jbawil@homtail.com"
                 }
                 );
-            //for (int i = 1; i < 100; i++)
-            //{
-            //    context.Person.AddOrUpdate(
-            //        P => P.Email,
-            //        new People
-            //        {
-            //            FirstName = "Unknown"+i,
-            //            LastName = "Somebody",
-            //            TelephoneNo = "0769876543"+i,
-            //            Email = i + "@gmail.com"
-            //        }
-            //        );
-            //}
+
+            InfoGenerator rndInfo = new InfoGenerator(DateTime.Now.Ticks.GetHashCode());
+            for (int i = 1; i < 10; i++)
+            {
+                context.Person.AddOrUpdate(
+                    P => P.Email,
+                    new People
+                    {
+                        FirstName = rndInfo.NextFirstName(),
+                        LastName = rndInfo.NextLastName(),
+                        TelephoneNo = "076"+rndInfo.Next(1,10000),
+                        Email = FirstName +"."LastName + "@gmail.com"
+                    }
+                    );
+            }
         }
     }
 }
