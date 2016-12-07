@@ -6,7 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    <script src="~/Scripts/angular.min.js"></script>
+    @*<script src="~/Scripts/angular.min.js"></script>*@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -21,7 +21,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("AngularJS", "AngularJS", "Home")</li>
+                    <li>@Html.ActionLink("AngularSPA", "AngularSPA", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
@@ -39,6 +39,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angularjs")
     @RenderSection("scripts", required: false)
     <script src="~/Content/AngularJS/myApp.js"></script>
     <script src="~/Content/AngularJS/appRoute.js"></script>

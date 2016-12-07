@@ -33,7 +33,7 @@ namespace Contacts.Controllers
         {
             object myInfo = null;
 
-            myInfo = db.Person.Single(P => P.Id == Id);
+            myInfo = db.Person.SingleOrDefault(P => P.Id == Id);
 
             if (myInfo == null)
             {
@@ -43,7 +43,7 @@ namespace Contacts.Controllers
             return Json(myInfo, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult AngularJS()
+        public ActionResult AngularSPA()
         {
             return View();
         }

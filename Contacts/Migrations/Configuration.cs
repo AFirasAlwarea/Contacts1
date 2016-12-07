@@ -51,19 +51,19 @@ namespace Contacts.Migrations
                     Email = "shadi.jbawil@homtail.com"
                 }
                 );
-            for (int i = 1; i < 100; i++)
-            {
-                context.Person.AddOrUpdate(
-                    P => P.Email,
-                    new People
-                    {
-                        FirstName = "Unknown"+i,
-                        LastName = "Somebody",
-                        TelephoneNo = "0769876543"+i,
-                        Email = i + "@gmail.com"
-                    }
-                    );
-            }
+            //for (int i = 1; i < 100; i++)
+            //{
+            //    context.Person.AddOrUpdate(
+            //        P => P.Email,
+            //        new People
+            //        {
+            //            FirstName = "Unknown"+i,
+            //            LastName = "Somebody",
+            //            TelephoneNo = "0769876543"+i,
+            //            Email = i + "@gmail.com"
+            //        }
+            //        );
+            //}
         }
     }
 }

@@ -1,7 +1,15 @@
 ﻿(function () {
     'use strict';
 
-    var appRoute = angular.module('appRoute', []);
+    var appRoute = angular.module('appRoute', [
+        // Angular modules
+        //'ngAnimate',
+        'ngRoute' // <-- This is needed to use AngularJS Routing!
+        // Custom modules
+
+        // 3rd Party Modules
+
+    ]);
 
     appRoute.controller('PeopleController', function ($scope, $http) {
 

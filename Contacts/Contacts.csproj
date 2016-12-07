@@ -188,9 +188,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\AngularJS\appRoute.js" />
-    <Content Include="Content\AngularJS\Details.html" />
+    <Content Include="Content\AngularJS\Details.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\AngularJS\myApp.js" />
-    <Content Include="Content\AngularJS\People.html" />
+    <Content Include="Content\AngularJS\People.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -1030,7 +1034,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\version.json" />
-    <Content Include="Views\Home\AngularJS.cshtml" />
+    <Content Include="Views\Home\AngularSPA.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
